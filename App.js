@@ -35,7 +35,7 @@ export default class App extends Component {
       <SafeAreaView style={{ flex: 1 }}>
         <FlatList
           data={items}
-          keyExtractor={(item, index) => `row-${index}`}
+          keyExtractor={this.keyExtractor}
           renderItem={this.renderItem}
           ListHeaderComponent={this.listHeader}
         />
